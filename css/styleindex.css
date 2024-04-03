@@ -1,0 +1,23 @@
+.my-navbar {
+  background-color: #dcc6ae;
+}
+
+.my-logo {
+  max-width: 90px;
+}
+
+.my-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my-nav .nav-item {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.my-nav .nav-link {
+  text-decoration: none;
+  color: #000;
+}
