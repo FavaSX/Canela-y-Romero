@@ -21,3 +21,14 @@
   text-decoration: none;
   color: #000;
 }
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.separator {
+  border-right: 2px solid #8a6666; /* Cambiar el color y el grosor de la línea si lo deseas */
+  height: 45px; /* Ajustar la altura de la línea según sea necesario */
+  margin: 0 10px; /* Ajustar los márgenes para el espacio adecuado */
+  border-radius: 10px; /* Agregar bordes redondos */
+}
