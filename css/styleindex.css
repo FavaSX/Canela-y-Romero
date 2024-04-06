@@ -17,9 +17,22 @@
   margin-left: 20px;
 }
 
-.my-nav .nav-link {
-  text-decoration: none;
-  color: #000;
+.my-navbar .navbar-nav .nav-link {
+  font-size: 18.5px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #000000; /* Color del texto */
+  transition: color 0.3s ease; /* Transición suave al cambiar color */
+}
+
+.my-navbar .navbar-nav .nav-link:hover {
+  color: #0400ff; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para el texto "Canela y Romero" en el navbar */
+.my-navbar .navbar-text {
+  font-size: 18.5px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #000000; /* Color del texto */
 }
 
 .footer {
@@ -79,4 +92,12 @@ body {
   .bg-light {
     min-height: 100%;
   }
+}
+
+.bg-light {
+  min-height: 100%;
+}
+
+.mb-4 {
+  margin-bottom: 20px;
 }
