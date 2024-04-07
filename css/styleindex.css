@@ -1,9 +1,10 @@
 .my-navbar {
   background-color: #dcc6ae;
+  padding: 10px 0;
 }
 
 .my-logo {
-  max-width: 90px;
+  max-width: 70px;
 }
 
 .my-nav {
@@ -17,55 +18,40 @@
   margin-left: 20px;
 }
 
-.my-navbar .navbar-nav .nav-link {
-  font-size: 18.5px; /* Tamaño de fuente */
-  font-weight: bold; /* Negrita */
-  color: #000000; /* Color del texto */
-  transition: color 0.3s ease; /* Transición suave al cambiar color */
+.my-navbar .navbar-nav .nav-link,
+.my-navbar .navbar-text {
+  font-size: 18.5px;
+  font-weight: bold;
+  color: #000;
 }
 
 .my-navbar .navbar-nav .nav-link:hover {
-  color: #0400ff; /* Cambio de color al pasar el ratón */
-}
-
-/* Estilos para el texto "Canela y Romero" en el navbar */
-.my-navbar .navbar-text {
-  font-size: 18.5px; /* Tamaño de fuente */
-  font-weight: bold; /* Negrita */
-  color: #000000; /* Color del texto */
+  color: #0400ff;
 }
 
 .footer {
   width: 100%;
-  flex-shrink: 0; /* Evita que el footer se contraiga */
-}
-
-.separator {
-  border-right: 2px solid #8a6666; /* Cambiar el color y el grosor de la línea si lo deseas */
-  height: 45px; /* Ajustar la altura de la línea según sea necesario */
-  margin: 0 10px; /* Ajustar los márgenes para el espacio adecuado */
-  border-radius: 10px; /* Agregar bordes redondos */
-}
-
-@media (min-width: 992px) {
-  .footer {
-    position: relative;
-  }
+  flex-shrink: 0;
+  min-height: 45px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 98px;
 }
 
-/* Agrega esta regla para el contenido principal */
 .main-content {
   flex: 1;
 }
 
 .carousel-item {
-  border-radius: 0 !important; /* Cambiar la forma del carrusel a un cuadrado */
+  border-radius: 0 !important;
 }
 
 .text-left {
@@ -87,108 +73,110 @@ body {
   font-size: 18px;
 }
 
-/* Ajustes para la altura del cuadro de productos destacados */
 @media (min-width: 992px) {
   .bg-light {
     min-height: 100%;
   }
 
-  /* Ajuste para las columnas y los productos */
   .carousel-container {
-    padding-left: 15px; /* Ajuste de relleno izquierdo para evitar el desbordamiento */
-    padding-right: 15px; /* Ajuste de relleno derecho para evitar el desbordamiento */
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
   }
 
   .product-container {
-    width: calc(20% - 20px); /* Ancho de la columna de producto con margen */
-    margin: 0 10px; /* Espacio entre columnas */
+    width: 200px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .product-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .title-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    margin-top: 25px;
   }
 }
 
-.bg-light {
-  min-height: 100%;
+.events {
+  margin-bottom: 20px; 
+}
+.follow-us-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
-.mb-4 {
-  margin-bottom: 20px;
-}
-.carousel-container {
-  max-width: 1140px; /* Ajusta el tamaño máximo del contenedor */
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  position: relative; /* Añade posicionamiento relativo */
-  margin-bottom: 20px;
-}
-.product-container {
-  width: 200px;
-  height: 350px; /* Aumenta la altura del contenedor de productos */
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  
-}
-.product-container img {
-  max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
-  height: auto; /* Para mantener la proporción de la imagen */
+.follow-us {
+  display: inline-block;
+  padding: 15px 30px; 
   border-radius: 5px;
-}
-.product-info {
-  flex-grow: 1; /* Permite que el texto ocupe todo el espacio restante */
-}
-.container  {
-  max-width: 1140px; /* Ajusta el tamaño máximo del contenedor */
-  height: auto; /* Para mantener la proporción de la imagen */
-}
-.title-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.title-icon {
-  font-size: 36px;
-  margin-right: 10px;
-}
-.title-text {
-  font-size: 24px;
+  text-decoration: none;
   font-weight: bold;
-}
-/* Estilo para las flechas */
-.carousel-control-prev, .carousel-control-next {
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px; /* Añade un pequeño radio de borde */
-  line-height: 50px;
-  text-align: center;
+  background: linear-gradient(135deg, #ff006a, #fe6d04);
   color: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-.carousel-control-prev {
-  left: 0; /* Ajusta la posición a la izquierda */
-}
-.carousel-control-next {
-  right: 0; /* Ajusta la posición a la derecha */
+  animation: fadeInUp 1s ease forwards;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 18px; 
 }
 
-.title-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 33px;
-  margin-top: 25px;
+.follow-us:hover {
+  background: linear-gradient(135deg, #fe6d04, #ff006a);
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

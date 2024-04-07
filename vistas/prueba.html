@@ -3,196 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Torta Destacada</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome para iconos -->
+  <title>Navbar</title>
   <style>
-    .carousel-container {
-      max-width: 1140px; /* Ajusta el tamaño máximo del contenedor */
-      margin: 0 auto;
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      position: relative; /* Añade posicionamiento relativo */
+    /* Estilos para la barra de navegación */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
     }
-    .product-container {
-      width: 200px;
-      height: 350px; /* Aumenta la altura del contenedor de productos */
-      margin: 0 auto;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
+
+    /* Estilos para mover la barra de navegación hacia arriba */
+    .navbar-hidden {
+      transform: translateY(-100%);
     }
-    .product-container img {
-      max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
-      height: auto; /* Para mantener la proporción de la imagen */
-      border-radius: 5px;
-    }
-    .product-info {
-      flex-grow: 1; /* Permite que el texto ocupe todo el espacio restante */
-    }
-    .container  {
-      max-width: 1140px; /* Ajusta el tamaño máximo del contenedor */
-      height: auto; /* Para mantener la proporción de la imagen */
-    }
-    .title-container {
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-    .title-icon {
-      font-size: 36px;
-      margin-right: 10px;
-    }
-    .title-text {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    /* Estilo para las flechas */
-    .carousel-control-prev, .carousel-control-next {
-      width: 50px;
-      height: 50px;
-      font-size: 24px;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 5px; /* Añade un pequeño radio de borde */
-      line-height: 50px;
-      text-align: center;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-    }
-    .carousel-control-prev {
-      left: 0; /* Ajusta la posición a la izquierda */
-    }
-    .carousel-control-next {
-      right: 0; /* Ajusta la posición a la derecha */
+
+    /* Estilos para el contenido debajo de la barra de navegación */
+    .content {
+      padding-top: 60px; /* Ajusta este valor según la altura de tu barra de navegación */
     }
   </style>
 </head>
 <body>
-
-<div class="container">
-  <div class="title-container">
-    <span class="title-icon"><i class="fas fa-birthday-cake"></i></span>
-    <h2 class="title-text">Torta Destacada</h2>
+  <nav class="navbar" id="navbar">
+    <!-- Contenido de la barra de navegación -->
+    Navbar
+  </nav>
+  <div class="content">
+    <!-- Contenido de la página -->
+    <!-- Puedes agregar aquí tus secciones, imágenes, etc. -->
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
   </div>
-  <div class="carousel-container">
-    <div id="product-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="d-flex justify-content-around">
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 1">
-              <div class="product-info">
-                <p>Nombre: Torta de Fresas</p>
-                <p>Precio: $20</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 2">
-              <div class="product-info">
-                <p>Nombre: Torta de Chocolate</p>
-                <p>Precio: $25</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 3">
-              <div class="product-info">
-                <p>Nombre: Torta de Zanahoria</p>
-                <p>Precio: $22</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 4">
-              <div class="product-info">
-                <p>Nombre: Torta de Limón</p>
-                <p>Precio: $18</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 5">
-              <div class="product-info">
-                <p>Torta de Vainilla</p>
-                <p>Precio: $22</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="d-flex justify-content-around">
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 6">
-              <div class="product-info">
-                <p>Nombre: Torta de Frutas</p>
-                <p>Precio: $23</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 7">
-              <div class="product-info">
-                <p>Nombre: Torta de Manzana</p>
-                <p>Precio: $21</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 8">
-              <div class="product-info">
-                <p>Nombre: Torta Red Velvet</p>
-                <p>Precio: $26</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 9">
-              <div class="product-info">
-                <p>Nombre: Torta de Tiramisú</p>
-                <p>Precio: $28</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-            <div class="product-container">
-              <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Torta 10">
-              <div class="product-info">
-                <p>Nombre: Torta de Tres Leches</p>
-                <p>Precio: $30</p>
-                <button class="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
-        <div class="carousel-arrow-bg"></div> <!-- Fondo rectángulo para flecha previa -->
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
-        <div class="carousel-arrow-bg"></div> <!-- Fondo rectángulo para flecha siguiente -->
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>
-    </div>
-  </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        // Desplazamiento hacia abajo
+        navbar.classList.add('navbar-hidden');
+      } else {
+        // Desplazamiento hacia arriba
+        navbar.classList.remove('navbar-hidden');
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar los bordes
+    });
+  </script>
 </body>
 </html>
