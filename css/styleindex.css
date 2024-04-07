@@ -92,6 +92,17 @@ body {
   .bg-light {
     min-height: 100%;
   }
+
+  /* Ajuste para las columnas y los productos */
+  .carousel-container {
+    padding-left: 15px; /* Ajuste de relleno izquierdo para evitar el desbordamiento */
+    padding-right: 15px; /* Ajuste de relleno derecho para evitar el desbordamiento */
+  }
+
+  .product-container {
+    width: calc(20% - 20px); /* Ancho de la columna de producto con margen */
+    margin: 0 10px; /* Espacio entre columnas */
+  }
 }
 
 .bg-light {
@@ -101,3 +112,83 @@ body {
 .mb-4 {
   margin-bottom: 20px;
 }
+.carousel-container {
+  max-width: 1140px; /* Ajusta el tamaño máximo del contenedor */
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative; /* Añade posicionamiento relativo */
+  margin-bottom: 20px;
+}
+.product-container {
+  width: 200px;
+  height: 350px; /* Aumenta la altura del contenedor de productos */
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  
+}
+.product-container img {
+  max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Para mantener la proporción de la imagen */
+  border-radius: 5px;
+}
+.product-info {
+  flex-grow: 1; /* Permite que el texto ocupe todo el espacio restante */
+}
+.container  {
+  max-width: 1140px; /* Ajusta el tamaño máximo del contenedor */
+  height: auto; /* Para mantener la proporción de la imagen */
+}
+.title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.title-icon {
+  font-size: 36px;
+  margin-right: 10px;
+}
+.title-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Estilo para las flechas */
+.carousel-control-prev, .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px; /* Añade un pequeño radio de borde */
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.carousel-control-prev {
+  left: 0; /* Ajusta la posición a la izquierda */
+}
+.carousel-control-next {
+  right: 0; /* Ajusta la posición a la derecha */
+}
+
+.title-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  margin-top: 25px;
+}
+
