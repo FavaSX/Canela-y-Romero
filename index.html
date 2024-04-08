@@ -116,7 +116,7 @@
                   <div class="product-info">
                     <p>Torta Brownie</p>
                     <p>Precio: $20.000</p>
-                    <button class="btn btn-primary">Agregar al carrito</button>
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Torta Brownie', 20000, 'images/Tortas/Torta Brownie.jpg')">Agregar al carrito</button>
                   </div>
                 </div>
                 <div class="product-container">
@@ -124,7 +124,7 @@
                   <div class="product-info">
                     <p>Torta Baby Shower?</p>
                     <p>Precio: $15.000</p>
-                    <button class="btn btn-primary">Agregar al carrito</button>
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Torta Baby Shower?', 15000, 'images/Tortas/Torta_1.png')">Agregar al carrito</button>
                   </div>
                 </div>
                 <div class="product-container">
@@ -133,7 +133,7 @@
                   <div class="product-info">
                     <p>Torta de bizcocho nuez y manjar</p>
                     <p>Precio: $20.000</p>
-                    <button class="btn btn-primary">Agregar al carrito</button>
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Torta de bizcocho nuez y manjar', 20000, 'images/Tortas/Bizcocho nuez y manjar.jpg')">Agregar al carrito</button>
                   </div>
                 </div>
                 <div class="product-container">
@@ -141,7 +141,7 @@
                   <div class="product-info">
                     <p>Torta Personalizada</p>
                     <p>Precio: $25.000</p>
-                    <button class="btn btn-primary">Agregar al carrito</button>
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Torta Personalizada', 25000, 'images/Tortas/Torta personalizada.jpg')">Agregar al carrito</button>
                   </div>
                 </div>
                 <div class="product-container">
@@ -149,7 +149,7 @@
                   <div class="product-info">
                     <p>Torta de Cumpleaños</p>
                     <p>Precio: $30.000</p>
-                    <button class="btn btn-primary">Agregar al carrito</button>
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Torta de Cumpleaños', 30000, 'images/Tortas/Torta Cumpleaños.jpg')">Agregar al carrito</button>
                   </div>
                 </div>
               </div>
@@ -177,7 +177,7 @@
                   <div class="product-info">
                     <p>Tortas</p>
                     <p>Precio: $50.000</p>
-                    <button class="btn btn-primary">Agregar al carrito</button>
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Tortas', 50000, 'images/Tortas/Tortas.png')">Agregar al carrito</button>
                   </div>
                 </div>
                 <div class="product-container">
@@ -228,7 +228,7 @@
                       <h4>Mango Cream</h4>
                       <img src="images/Cocteleria/Cream Mango.png" class="img-fluid" alt="Mango Cream">
                       <p class="card-text mt-3">Precio: $7.300</p>
-                      <button class="btn btn-primary btn-sm">Agregar al carrito</button>
+                      <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito('Mango Cream', 7300, 'images/Cocteleria/Cream Mango.png')">Agregar al carrito</button>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -236,7 +236,7 @@
                       <h4>Cola de Mono</h4>
                       <img src="images/Cocteleria/Cola de Mono.png" class="img-fluid" alt="Cola de Mono">
                       <p class="card-text mt-3">Precio: $8.000</p>
-                      <button class="btn btn-primary btn-sm">Agregar al carrito</button>
+                      <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito('Cola de Mono', 8000, 'images/Cocteleria/Cola de Mono.png')">Agregar al carrito</button>
                     </div>
                   </div>
                 </div>
@@ -268,7 +268,7 @@
                       <img src="images/Pan de Pascua/Pan de pascua c.png" class="img-fluid"
                         alt="Pan de Pascua Tradicional">
                       <p class="card-text mt-3">Precio: $5.000</p>
-                      <button class="btn btn-primary btn-sm">Agregar al carrito</button>
+                      <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito('Pan de Pascua Tradicional', 5000, 'images/Pan de Pascua/Pan de pascua c.png')">Agregar al carrito</button>
                     </div>
                   </div>
                   <!-- Agrega más elementos del carrusel de Panes de Pascua según sea necesario -->
@@ -277,7 +277,7 @@
                       <h4>Pan de Pascua Vegano</h4>
                       <img src="images/Pan de Pascua/PC vegano.png" class="img-fluid" alt="Pan de Pascua de Nueces">
                       <p class="card-text mt-3">Precio: $6.5000</p>
-                      <button class="btn btn-primary btn-sm">Agregar al carrito</button>
+                      <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito('Pan de Pascua Vegano', 6500, 'images/Pan de Pascua/PC vegano.png')">Agregar al carrito</button>
                     </div>
                   </div>
                 </div>
@@ -347,6 +347,9 @@
         </div>
       </div>
     </footer>
+    <div id="carrito" class="carrito-container">
+      <!-- Contenido del carrito se añadirá dinámicamente aquí -->
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
@@ -356,7 +359,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
-
+    
 </body>
 
 </html>
