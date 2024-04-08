@@ -29,16 +29,6 @@
   color: #0400ff;
 }
 
-.footer {
-  width: 100%;
-  flex-shrink: 0;
-  min-height: 45px;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -179,4 +169,153 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  max-width: 85px;
+  margin-bottom: 0px; /* Agregado para separar el logo del texto */
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px; /* Agregado para separar los enlaces del texto */
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.btn-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Ajusta el tamaño de la fuente de los enlaces */
+}
+
+.footer-links a:hover,
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.footer-links a:hover {
+  color: #ffc107; /* Cambia el color al pasar el ratón sobre los enlaces */
+}
+
+.btn-link:hover {
+  color: #ffc107; /* Cambia el color al pasar el ratón sobre los botones */
+}
+
+.copyright-img {
+  max-width: 75px;
+  vertical-align: middle; /* Para alinear verticalmente la imagen con el texto */
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+/* Cambia el tamaño de la fuente del texto de "Todos los derechos reservados" */
+.copyright-text {
+  font-size: 18px; /* Ajusta el tamaño de la fuente del texto de derechos reservados */
+}
+.product-container {
+  transition: transform 0.23s ease-in-out;
+}
+
+.product-container:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del producto al 105% */
+}
+
+.carousel-caption h5 {
+  border-radius: 10px; /* Aplica bordes redondeados al contenedor del texto */
+  padding: 10px; /* Agrega espacio interno alrededor del texto */
+  transition: all 0.3s ease; /* Agrega un efecto de transición suave */
+}
+
+.carousel-caption h5:hover {
+  color: rgb(252, 69, 37); /* Cambia el color del texto a azul al pasar el cursor */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+}
+
+.custom-caption {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-caption h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.custom-caption p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#event-carousel {
+  border: 2px solid #8a7c7c; /* Color y grosor del borde */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el contenido que desborda el contenedor */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
+  margin-bottom: 20px; /* Espacio inferior para separar otros elementos */
+}
+
+#pan-pascua-carousel,
+#cocteleria-carousel {
+  border: 2px solid #8a7c7c; /* Color y grosor del borde */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el contenido que desborda el contenedor */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
+  margin-bottom: 20px; /* Espacio inferior para separar otros elementos */
+}
+
+/* Agrega estas líneas al final de tu archivo CSS */
+
+/* Efecto de transición suave al pasar el cursor sobre el enlace del menú */
+/* Agrega estas líneas al final de tu archivo CSS */
+
+/* Efecto de transición suave al pasar el cursor sobre el enlace del menú */
+.navbar-nav .dropdown-menu {
+  transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Agrega sombra y borde redondeado al menú desplegable */
+.dropdown-menu {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+}
+
+/* Añade un poco de espacio entre los elementos del menú desplegable */
+.dropdown-item {
+  margin: 0.5rem 0;
+}
+
+/* Cambia el color de fondo del menú desplegable al pasar el cursor */
+.dropdown-menu {
+  background-color: #ffffff; /* Color de fondo del menú */
+}
+
+.dropdown-item {
+  color: #000000; /* Color del texto del menú */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f8f9fa; /* Color de fondo al pasar el cursor */
 }
