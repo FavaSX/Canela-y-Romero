@@ -319,3 +319,23 @@ footer {
 .dropdown-item:focus {
   background-color: #f8f9fa; /* Color de fondo al pasar el cursor */
 }
+.producto {
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px 0;
+}
+.producto-info {
+  display: flex;
+  align-items: center;
+}
+.producto-info img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.nombre {
+  margin-bottom: 0;
+}
+.precio {
+  margin-bottom: 0;
+  color: green;
+}
