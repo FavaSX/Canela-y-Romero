@@ -339,3 +339,7 @@ footer {
   margin-bottom: 0;
   color: green;
 }
+
+.acciones {
+  margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
+}
