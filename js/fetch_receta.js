@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-    // Función para obtener una receta aleatoria al cargar la página
+
     getRandomRecipe();
 
-    // Función para obtener una receta aleatoria
+
     function getRandomRecipe() {
         $.ajax({
             type: 'GET',
@@ -19,7 +19,6 @@ $(document).ready(function() {
         });
     }
 
-    // Función para mostrar la receta en la página
     function displayRecipe(recipe) {
         $('#recipeImage').attr('src', recipe.strMealThumb);
         $('#recipeName').text(recipe.strMeal);
@@ -44,12 +43,11 @@ $(document).ready(function() {
         }
     }
 
-    // Evento de clic para obtener una receta aleatoria cuando se presiona el botón
+
     $('#randomRecipeBtn').click(function() {
         getRandomRecipe();
     });
 
-    // Evento de clic para buscar una receta por nombre
     $('#searchRecipeBtn').click(function() {
         const searchQuery = $('#searchInput').val().trim();
         if (searchQuery !== '') {
